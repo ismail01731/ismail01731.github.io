@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>আমার রেস্টুরেন্ট</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>আমার রেস্টুরেন্ট</h1>
+      <nav>
+        <a href="#menu">মেনু</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>টেস্টি খাবার, ফ্রেশ সার্ভিস</h2>
+        <p>ডেলিভারি ও পিকআপ পাওয়া যায়</p>
+        <a class="btn" href="#contact">অর্ডার করুন</a>
+      </div>
+    </section>
+
+    <section id="menu" class="section container">
+      <h3>জনপ্রিয় আইটেম</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>চিকেন বিরিয়ানি</h4>
+          <p>৳180</p>
+        </div>
+        <div class="card">
+          <h4>বিফ বার্গার</h4>
+          <p>৳220</p>
+        </div>
+        <div class="card">
+          <h4>কোল্ড ড্রিংকস</h4>
+          <p>৳40</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>আমাদের সম্পর্কে</h3>
+      <p>আমরা ফ্রেশ ও স্বাস্থ্যকর খাবার পরিবেশন করি।</p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>যোগাযোগ</h3>
+      <p>ফোন: 01XXXXXXXXX</p>
+      <p>ঠিকানা: আপনার লোকেশন</p>
+      <p>
+        WhatsApp:
+        <a href="https://wa.me/8801XXXXXXXXX" target="_blank">Message</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> আমার রেস্টুরেন্ট</div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
