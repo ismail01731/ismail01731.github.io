@@ -459,6 +459,40 @@ label="Back to top">
         start: "top 70%"
       }
     });
+    // Scroll progress bar
+const progressBar = document.querySelector(".progress-bar");
+
+window.addEventListener("scroll", function () {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const progress = (scrollTop / scrollHeight) * 100;
+
+  if (progressBar) {
+    progressBar.style.width = progress + "%";
+  }
+});
+
+// Back to top button
+const backTop = document.getElementById("backTop");
+
+window.addEventListener("scroll", function () {
+  if (!backTop) return;
+
+  if (window.scrollY > 700) {
+    backTop.classList.add("show");
+  } else {
+    backTop.classList.remove("show");
+  }
+});
+
+if (backTop) {
+  backTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
 
     window.addEventListener("load", function () {
       ScrollTrigger.refresh();
