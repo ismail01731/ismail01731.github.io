@@ -401,6 +401,7 @@ label="Back to top">
 
 
     // Menu cards animation
+    
     gsap.from(".food-card", {
       y: 90,
       opacity: 0,
@@ -414,6 +415,61 @@ label="Back to top">
         toggleActions: "play none none reverse"
       }
     });
+// Menu filter system
+const filterButtons = document.querySelectorAll(".filter-btn");
+const allMenuCards = document.querySelectorAll(".menu-grid .food-card");
+
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const filterValue = button.getAttribute("data-filter");
+
+    // active button change
+    filterButtons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    button.classList.add("active");
+
+    const visibleCards = [];
+
+    allMenuCards.forEach(function (card) {
+      const categories = (card.getAttribute("data-category") || "").split(" ");
+
+      if (filterValue === "all" || categories.includes(filterValue)) {
+        card.classList.remove("is-hidden");
+        visibleCards.push(card);
+      } else {
+        card.classList.add("is-hidden");
+      }
+    });
+
+    // smooth animation after filter
+    if (window.gsap && visibleCards.length > 0) {
+      gsap.killTweensOf(visibleCards);
+
+      gsap.fromTo(
+        visibleCards,
+        {
+          opacity: 0,
+          y: 35,
+          scale: 0.96
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.45,
+          stagger: 0.08,
+          ease: "power2.out",
+          clearProps: "transform"
+        }
+      );
+    }
+
+    if (window.ScrollTrigger) {
+      ScrollTrigger.refresh();
+    }
+  });
+});
 
 
     // Actual video scroll effect
