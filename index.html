@@ -1,78 +1,334 @@
 <!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ismail Restaurant | Fresh Food & Delivery</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismail Food House | Parallax Restaurant</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Ismail Restaurant</h1>
-      <nav>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+
+  <header class="topbar">
+    <a class="logo" href="#home">Ismail Food</a>
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Order</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
+
+    <!-- HERO SECTION -->
+    <section class="hero-scene" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Fresh • Hot • Delicious</p>
+        <h1>Scroll করলেই খাবারের গল্প শুরু</h1>
+        <p>ফ্রেশ খাবার, দ্রুত ডেলিভারি এবং সুন্দর সার্ভিস।</p>
+        <a class="btn" href="https://wa.me/8801XXXXXXXXX" target="_blank">
+          WhatsApp Order
+        </a>
+      </div>
+
+      <img class="floating food-1" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Burger">
+      <img class="floating food-2" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza">
+      <img class="floating food-3" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80" alt="Drink">
+    </section>
+
+
+    <!-- STORYTELLING PARALLAX SECTION -->
+    <section class="story-wrap" id="story">
+      <div class="story-pin">
+
+        <div class="story-media">
+          <div class="story-bg"></div>
+          <img class="plate" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="Food plate">
+        </div>
+
+        <div class="story-copy">
+
+          <div class="story-step step-1">
+            <span>01</span>
+            <h2>Fresh Ingredients</h2>
+            <p>
+              প্রতিদিন ফ্রেশ উপকরণ দিয়ে আমরা খাবার তৈরি করি,
+              যাতে স্বাদ এবং quality ভালো থাকে।
+            </p>
+          </div>
+
+          <div class="story-step step-2">
+            <span>02</span>
+            <h2>Cooked With Care</h2>
+            <p>
+              প্রতিটি আইটেম যত্ন করে রান্না করা হয়।
+              পরিষ্কার পরিবেশ এবং ভালো সার্ভিস আমাদের priority।
+            </p>
+          </div>
+
+          <div class="story-step step-3">
+            <span>03</span>
+            <h2>Fast Delivery</h2>
+            <p>
+              আপনার অর্ডার দ্রুত পৌঁছে দিতে আমরা চেষ্টা করি।
+              WhatsApp দিয়ে খুব সহজে order করতে পারবেন।
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu">
       <div class="container">
-        <h2>টফ্রেশ ও টেস্টি খাবার, এখন আরও সহজে</h2>
-        <p>বিরিয়ানি, বার্গার, পিজ্জা, ড্রিংকস — Delivery & Pickup Available</p>
-        <a class="btn" href="https://wa.me/8801700936141?text=Hello%20I%20want%20to%20order" target="_blank">WhatsApp Order</a>
+        <p class="eyebrow dark">Popular Menu</p>
+        <h2>আজকের সেরা খাবার</h2>
+
+        <div class="menu-grid">
+
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=80" alt="Biryani">
+            <div class="card-body">
+              <h3>চিকেন বিরিয়ানি</h3>
+              <p>ফ্রেশ চিকেন, সুগন্ধি চাল, স্পেশাল মসলা।</p>
+              <strong>৳180</strong>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Burger">
+            <div class="card-body">
+              <h3>বিফ বার্গার</h3>
+              <p>জুসি প্যাটি, চিজ, ফ্রেশ সবজি।</p>
+              <strong>৳220</strong>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizza">
+            <div class="card-body">
+              <h3>চিকেন পিজ্জা</h3>
+              <p>চিজি, সফট crust এবং spicy chicken topping।</p>
+              <strong>৳350</strong>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=80" alt="Fried Chicken">
+            <div class="card-body">
+              <h3>ফ্রাইড চিকেন</h3>
+              <p>ক্রিসপি coating, ভিতরে juicy chicken।</p>
+              <strong>৳250</strong>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
-    <section id="menu" class="section container">
-      <h3>জনপ্রিয় আইটেম</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>চিকেন বিরিয়ানি</h4>
-          <p>৳180</p>
+
+    <!-- OFFER PARALLAX SECTION -->
+    <section class="offer-section">
+      <div class="offer-bg"></div>
+      <div class="offer-content">
+        <p class="eyebrow">Special Combo</p>
+        <h2>Burger + Fries + Drink</h2>
+        <p>মাত্র ৳299</p>
+        <a class="btn" href="https://wa.me/8801XXXXXXXXX" target="_blank">
+          Order Combo
+        </a>
+      </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow dark">Contact</p>
+          <h2>অর্ডার করতে যোগাযোগ করুন</h2>
+          <p>ফোন: <a href="tel:+8801XXXXXXXXX">01XXXXXXXXX</a></p>
+          <p>WhatsApp: <a href="https://wa.me/8801XXXXXXXXX" target="_blank">Message করুন</a></p>
+          <p>ঠিকানা: আপনার দোকানের ঠিকানা</p>
+          <p>খোলা থাকে: সকাল ১০টা - রাত ১১টা</p>
         </div>
-        <div class="card">
-          <h4>খাবারের নাম</h4>
-          <p>দাম</p>
-        </div>
-        <div class="card">
-          <h4>বিফ বার্গার</h4>
-          <p>৳220</p>
-        </div>
-        <div class="card">
-          <h4>কোল্ড ড্রিংকস</h4>
-          <p>৳40</p>
+
+        <div class="order-card">
+          <h3>Quick Order</h3>
+          <p>WhatsApp এ মেসেজ দিলেই order confirm করা হবে।</p>
+          <a class="btn dark-btn" href="https://wa.me/8801XXXXXXXXX" target="_blank">
+            Order Now
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <h3>আমাদের সম্পর্কে</h3>
-      <p>Ismail Restaurant-এ আমরা প্রতিদিন ফ্রেশ উপকরণ দিয়ে সুস্বাদু খাবার তৈরি করি।
-         আমাদের লক্ষ্য হলো ভালো স্বাদ, পরিষ্কার পরিবেশ এবং দ্রুত সার্ভিস দেওয়া।</p>
-    </section>
-
-    <section id="contact" class="section container">
-      <h3>যোগাযোগ</h3>
-      <p>ফোন: <a href="tel:+8801700936141">01700936141</a></p>
-      <p>ঠিকানা: Bangladesh, Noakhali, sobornocor,kolar hat</p>
-      <p>খোলা থাকে: সকাল ১০টা - রাত ১১টা</p>
-      <p>Delivery Area: sobornocor, kolar hat / Noakhali</p>
-        WhatsApp:
-        <a href="https://wa.me/8801700936141" target="_blank">Message</a>
-      </p>
-    </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">© <span id="y"></span> Ismail Restaurant</div>
+  <footer>
+    © 2026 Ismail Food House. All Rights Reserved.
   </footer>
 
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero video-like parallax
+    gsap.to(".hero-bg", {
+      scale: 1.18,
+      y: 80,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-scene",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    gsap.to(".hero-content", {
+      y: -120,
+      opacity: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-scene",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    gsap.to(".food-1", {
+      y: 220,
+      x: -70,
+      rotate: 25,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-scene",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    gsap.to(".food-2", {
+      y: -160,
+      x: 70,
+      rotate: -20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-scene",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    gsap.to(".food-3", {
+      y: 160,
+      x: 80,
+      rotate: 18,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-scene",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+
+    // Storytelling pinned section
+    gsap.set(".story-step", { autoAlpha: 0, y: 40 });
+    gsap.set(".step-1", { autoAlpha: 1, y: 0 });
+
+    const story = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".story-wrap",
+        start: "top top",
+        end: "+=2400",
+        scrub: true,
+        pin: ".story-pin",
+        anticipatePin: 1
+      }
+    });
+
+    story
+      .fromTo(".plate",
+        { scale: 0.75, y: 80, rotate: -8, autoAlpha: 0 },
+        { scale: 1, y: 0, rotate: 0, autoAlpha: 1, duration: 0.8 }
+      )
+      .to(".story-bg", { scale: 1.15, duration: 2.6 }, 0)
+
+      .to(".step-1", { autoAlpha: 0, y: -50, duration: 0.5 }, 0.9)
+      .fromTo(".step-2",
+        { autoAlpha: 0, y: 50 },
+        { autoAlpha: 1, y: 0, duration: 0.5 },
+        1.0
+      )
+      .to(".plate", { x: 120, rotate: 8, scale: 1.06, duration: 1 }, 1.0)
+
+      .to(".step-2", { autoAlpha: 0, y: -50, duration: 0.5 }, 1.9)
+      .fromTo(".step-3",
+        { autoAlpha: 0, y: 50 },
+        { autoAlpha: 1, y: 0, duration: 0.5 },
+        2.0
+      )
+      .to(".plate", { x: -80, y: -20, rotate: -7, scale: 0.95, duration: 1 }, 2.0);
+
+
+    // Menu cards animation
+    gsap.from(".food-card", {
+      y: 90,
+      opacity: 0,
+      rotateX: 15,
+      stagger: 0.15,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".menu-grid",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+
+
+    // Offer section parallax
+    gsap.to(".offer-bg", {
+      scale: 1.18,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".offer-section",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    gsap.from(".offer-content", {
+      y: 70,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".offer-section",
+        start: "top 70%"
+      }
+    });
+
+    window.addEventListener("load", function () {
+      ScrollTrigger.refresh();
+    });
   </script>
+
 </body>
 </html>
