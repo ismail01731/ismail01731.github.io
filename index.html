@@ -427,13 +427,129 @@ label="Back to top">
         toggleActions: "play none none reverse"
       }
     });
-// Menu filter system
+// Menu filter + search system
 const filterButtons = document.querySelectorAll(".filter-btn");
 const allMenuCards = document.querySelectorAll(".menu-grid .food-card");
+const menuSearch = document.getElementById("menuSearch");
+const clearSearch = document.getElementById("clearSearch");
+const searchResult = document.getElementById("searchResult");
+
+const activeButton = document.querySelector(".filter-btn.active");
+let activeFilter = activeButton ? activeButton.getAttribute("data-filter") : "all";
+
+function getCardSearchText(card) {
+  const img = card.querySelector("img");
+  const imgAlt = img ? img.getAttribute("alt") : "";
+
+  return (
+    (card.getAttribute("data-search") || "") +
+    " " +
+    card.innerText +
+    " " +
+    imgAlt
+  ).toLowerCase();
+}
+
+function updateMenuList() {
+  const keyword = menuSearch ? menuSearch.value.trim().toLowerCase() : "";
+  const visibleCards = [];
+
+  allMenuCards.forEach(function (card) {
+    const categories = (card.getAttribute("data-category") || "")
+      .toLowerCase()
+      .split(/\s+/);
+
+    const cardText = getCardSearchText(card);
+
+    const matchCategory =
+      activeFilter === "all" || categories.includes(activeFilter);
+
+    const matchSearch =
+      keyword === "" || cardText.includes(keyword);
+
+    if (matchCategory && matchSearch) {
+      card.classList.remove("is-hidden");
+      visibleCards.push(card);
+    } else {
+      card.classList.add("is-hidden");
+    }
+  });
+
+  if (searchResult) {
+    if (keyword !== "" || activeFilter !== "all") {
+      if (visibleCards.length > 0) {
+        searchResult.textContent = visibleCards.length + "টি খাবার পাওয়া গেছে";
+      } else {
+        searchResult.textContent = "কোন খাবার পাওয়া যায়নি";
+      }
+    } else {
+      searchResult.textContent = "";
+    }
+  }
+
+  // smooth animation after search/filter
+  if (window.gsap && visibleCards.length > 0) {
+    gsap.killTweensOf(visibleCards);
+
+    gsap.fromTo(
+      visibleCards,
+      {
+        opacity: 0,
+        y: 30,
+        scale: 0.96
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.4,
+        stagger: 0.06,
+        ease: "power2.out",
+        clearProps: "transform"
+      }
+    );
+  }
+
+  if (window.ScrollTrigger) {
+    ScrollTrigger.refresh();
+  }
+}
 
 filterButtons.forEach(function (button) {
   button.addEventListener("click", function () {
-    const filterValue = button.getAttribute("data-filter");
+    activeFilter = button.getAttribute("data-filter") || "all";
+
+    filterButtons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    updateMenuList();
+  });
+});
+
+if (menuSearch) {
+  menuSearch.addEventListener("input", updateMenuList);
+
+  menuSearch.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      menuSearch.value = "";
+      updateMenuList();
+    }
+  });
+}
+
+if (clearSearch) {
+  clearSearch.addEventListener("click", function () {
+    if (menuSearch) {
+      menuSearch.value = "";
+      menuSearch.focus();
+    }
+
+    updateMenuList();
+  });
+}
 
     // active button change
     filterButtons.forEach(function (btn) {
