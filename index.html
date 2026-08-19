@@ -209,6 +209,60 @@
 
   <script>
     gsap.registerPlugin(ScrollTrigger);
+    <script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  const scrollVideo = document.querySelector(".scroll-video");
+
+  if (scrollVideo) {
+    scrollVideo.addEventListener("loadedmetadata", function () {
+      const videoTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".video-scroll",
+          start: "top top",
+          end: "+=3000",
+          scrub: true,
+          pin: true,
+          anticipatePin: 1
+        }
+      });
+
+      videoTimeline.to(scrollVideo, {
+        currentTime: scrollVideo.duration,
+        ease: "none"
+      }, 0);
+
+      videoTimeline
+        .fromTo(".v-step-1",
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, duration: 0.4 },
+          0.05
+        )
+        .to(".v-step-1",
+          { autoAlpha: 0, y: -50, duration: 0.4 },
+          0.30
+        )
+
+        .fromTo(".v-step-2",
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, duration: 0.4 },
+          0.38
+        )
+        .to(".v-step-2",
+          { autoAlpha: 0, y: -50, duration: 0.4 },
+          0.65
+        )
+
+        .fromTo(".v-step-3",
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, duration: 0.4 },
+          0.72
+        );
+    });
+
+    scrollVideo.load();
+  }
+</script>
 
     // Hero video-like parallax
     gsap.to(".hero-bg", {
