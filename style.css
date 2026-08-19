@@ -587,3 +587,122 @@ footer {
     padding: 70px 0;
   }
 }
+/* PREMIUM EXTRA FEATURES */
+
+/* Scroll progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: linear-gradient(90deg, #ffcc33, #ff8a00);
+  z-index: 2000;
+  box-shadow: 0 0 18px rgba(255, 204, 51, 0.7);
+}
+
+/* Menu order button */
+.mini-order {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.mini-order:hover {
+  background: #ffcc33;
+  color: #111 !important;
+  transform: translateY(-2px);
+}
+
+/* Better food card hover */
+.food-card {
+  transition: 0.35s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(80, 45, 0, 0.22);
+}
+
+.food-card img {
+  transition: 0.45s ease;
+}
+
+.food-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Floating WhatsApp button */
+.wa-float {
+  position: fixed;
+  right: 22px;
+  bottom: 24px;
+  z-index: 1500;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #25d366;
+  color: white !important;
+  font-weight: 900;
+  box-shadow: 0 18px 45px rgba(37, 211, 102, 0.35);
+  transition: 0.25s ease;
+}
+
+.wa-float:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* Back to top button */
+.back-top {
+  position: fixed;
+  right: 22px;
+  bottom: 88px;
+  z-index: 1500;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffcc33;
+  color: #111;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 15px 40px rgba(255, 204, 51, 0.32);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: 0.25s ease;
+}
+
+.back-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-top:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile fix */
+@media (max-width: 600px) {
+  .wa-float {
+    right: 14px;
+    bottom: 18px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .back-top {
+    right: 14px;
+    bottom: 76px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
