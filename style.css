@@ -848,4 +848,21 @@ footer {
     padding: 13px 18px;
   }
 }
+.contact-map{
+  margin-top: 26px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 55px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.map-links{
+  margin: 14px 0 0;
+  font-weight: 800;
+  color: #6b5a44;
+}
+
+.map-links a{
+  color: #b57900;
+}
 
