@@ -376,3 +376,38 @@ if (backTop) {
 window.addEventListener("load", function () {
   ScrollTrigger.refresh();
 });
+// WhatsApp Order Form
+const waOrderForm = document.getElementById("waOrderForm");
+
+if (waOrderForm) {
+  waOrderForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("waName").value.trim();
+    const phone = document.getElementById("waPhone").value.trim();
+    const address = document.getElementById("waAddress").value.trim();
+    const item = document.getElementById("waItem").value.trim();
+    const qty = document.getElementById("waQty").value.trim();
+    const note = document.getElementById("waNote").value.trim();
+
+    if (!name || !phone || !address || !item || !qty) {
+      alert("সব তথ্য দিন, তারপর Order করুন।");
+      return;
+    }
+
+    const message =
+      "New Order%0A" +
+      "Name: " + name + "%0A" +
+      "Phone: " + phone + "%0A" +
+      "Address: " + address + "%0A" +
+      "Item: " + item + "%0A" +
+      "Qty: " + qty + "%0A" +
+      (note ? ("Note: " + note + "%0A") : "");
+
+    // আপনার WhatsApp number
+    const waNumber = "8801700936141";
+
+    const url = "https://wa.me/" + waNumber + "?text=" + message;
+    window.open(url, "_blank");
+  });
+}
