@@ -4,23 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ismail Food House | Parallax Restaurant</title>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "Ismail Food House",
-  "url": "https://ismail01731.github.io/",
-  "telephone": "+8801700936141",
-  "servesCuisine": ["Fast Food", "Biryani", "Burger", "Pizza"],
-  "priceRange": "৳",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "আপনার দোকানের ঠিকানা",
-    "addressCountry": "BD"
-  }
-}
-</script>
+
   <meta name="description" content="Ismail Food House - Fresh food, fast delivery and online WhatsApp order.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ismail Food House",
+    "url": "https://ismail01731.github.io/",
+    "telephone": "+8801700936141",
+    "servesCuisine": ["Fast Food", "Biryani", "Burger", "Pizza"],
+    "priceRange": "৳",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "আপনার দোকানের ঠিকানা",
+      "addressCountry": "BD"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,14 +51,22 @@
         <p class="eyebrow">Fresh • Hot • Delicious</p>
         <h1>Scroll করলেই খাবারের গল্প শুরু</h1>
         <p>ফ্রেশ খাবার, দ্রুত ডেলিভারি এবং সুন্দর সার্ভিস।</p>
-        <a class="mini-order js-pick-item" href="#contact" data-item="চিকেন বিরিয়ানি">
+
+        <!-- Hero order: click করলে নিচে form-এ যাবে + item select হবে -->
+        <a class="btn js-pick-item" href="#contact" data-item="চিকেন বিরিয়ানি">
           Order Now
         </a>
       </div>
 
-      <img class="floating food-1" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Burger">
-      <img class="floating food-2" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza">
-      <img class="floating food-3" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80" alt="Drink">
+      <img class="floating food-1"
+           src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+           alt="Burger">
+      <img class="floating food-2"
+           src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
+           alt="Pizza">
+      <img class="floating food-3"
+           src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80"
+           alt="Drink">
     </section>
 
 
@@ -65,38 +76,29 @@
 
         <div class="story-media">
           <div class="story-bg"></div>
-          <img class="plate" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="Food plate">
+          <img class="plate"
+               src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80"
+               alt="Food plate">
         </div>
 
         <div class="story-copy">
-
           <div class="story-step step-1">
             <span>01</span>
             <h2>Fresh Ingredients</h2>
-            <p>
-              প্রতিদিন ফ্রেশ উপকরণ দিয়ে আমরা খাবার তৈরি করি,
-              যাতে স্বাদ এবং quality ভালো থাকে।
-            </p>
+            <p>প্রতিদিন ফ্রেশ উপকরণ দিয়ে আমরা খাবার তৈরি করি, যাতে স্বাদ এবং quality ভালো থাকে।</p>
           </div>
 
           <div class="story-step step-2">
             <span>02</span>
             <h2>Cooked With Care</h2>
-            <p>
-              প্রতিটি আইটেম যত্ন করে রান্না করা হয়।
-              পরিষ্কার পরিবেশ এবং ভালো সার্ভিস আমাদের priority।
-            </p>
+            <p>প্রতিটি আইটেম যত্ন করে রান্না করা হয়। পরিষ্কার পরিবেশ এবং ভালো সার্ভিস আমাদের priority।</p>
           </div>
 
           <div class="story-step step-3">
             <span>03</span>
             <h2>Fast Delivery</h2>
-            <p>
-              আপনার অর্ডার দ্রুত পৌঁছে দিতে আমরা চেষ্টা করি।
-              WhatsApp দিয়ে খুব সহজে order করতে পারবেন।
-            </p>
+            <p>আপনার অর্ডার দ্রুত পৌঁছে দিতে আমরা চেষ্টা করি। WhatsApp দিয়ে খুব সহজে order করতে পারবেন।</p>
           </div>
-
         </div>
 
       </div>
@@ -111,10 +113,10 @@
 
         <!-- SEARCH BOX -->
         <div class="menu-search">
-          <input 
-            type="search" 
-            id="menuSearch" 
-            placeholder="খাবারের নাম লিখুন... যেমন: burger, বিরিয়ানি, pizza" 
+          <input
+            type="search"
+            id="menuSearch"
+            placeholder="খাবারের নাম লিখুন... যেমন: burger, বিরিয়ানি, pizza"
             autocomplete="off"
           >
           <button type="button" id="clearSearch">Clear</button>
@@ -135,138 +137,91 @@
 
         <div class="menu-grid">
 
+          <!-- Chicken Biryani -->
           <article class="food-card" data-category="biryani" data-search="চিকেন বিরিয়ানি chicken biryani biriyani rice">
             <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=80" alt="Chicken Biryani">
             <div class="card-body">
               <h3>চিকেন বিরিয়ানি</h3>
               <p>ফ্রেশ চিকেন, সুগন্ধি চাল, স্পেশাল মসলা।</p>
               <strong>৳180</strong>
-              <a class="mini-order js-pick-item" href="#contact" data-item="কাচ্চি বিরিয়ানি">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="চিকেন বিরিয়ানি">Order Now</a>
             </div>
           </article>
 
+          <!-- Kacchi -->
           <article class="food-card" data-category="biryani" data-search="কাচ্চি বিরিয়ানি kacchi biryani biriyani rice mutton">
             <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=80" alt="Kacchi Biryani">
             <div class="card-body">
               <h3>কাচ্চি বিরিয়ানি</h3>
               <p>স্পেশাল মসলা, নরম মাংস এবং প্রিমিয়াম চাল।</p>
               <strong>৳280</strong>
-              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Kacchi%20Biryani" target="_blank">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="কাচ্চি বিরিয়ানি">Order Now</a>
             </div>
           </article>
 
+          <!-- Beef Burger -->
           <article class="food-card" data-category="burger" data-search="বিফ বার্গার beef burger hamburger">
             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Beef Burger">
-            <div class="order-card">
-              <h3>Quick Order (WhatsApp)</h3>
-
-              <form id="waOrderForm" class="wa-form">
-                <label>
-                  Ismail
-                  <input id="waName" type="text" placeholder="আপনার নাম" required>
-                </label>
-
-                <label>
-                  01700936141
-                  <input id="waPhone" type="tel" placeholder="01XXXXXXXXX" required>
-                </label>
-
-                <label>
-                  Bangladesh,Noakhali,sobornocor,kolar hat
-                  <input id="waAddress" type="text" placeholder="আপনার ঠিকানা" required>
-                </label>
-
-                <label>
-                  কোন আইটেম
-                  <select id="waItem" required>
-                    <option value="">Select item</option>
-                    <option>চিকেন বিরিয়ানি</option>
-                    <option>কাচ্চি বিরিয়ানি</option>
-                    <option>বিফ বার্গার</option>
-                    <option>চিজ বার্গার</option>
-                    <option>চিকেন পিজ্জা</option>
-                    <option>ফ্রাইড চিকেন</option>
-                    <option>কোল্ড ড্রিংকস</option>
-                    <option>ফ্রেঞ্চ ফ্রাই</option>
-      </select>
-    </label>
-
-    <label>
-      কয়টা
-      <input id="waQty" type="number" min="1" value="1" required>
-    </label>
-
-    <label>
-      Note (ঐচ্ছিক)
-      <textarea id="waNote" rows="3" placeholder="ঝাল কম / পেঁয়াজ ছাড়া..."></textarea>
-    </label>
-
-    <button class="btn dark-btn" type="submit">WhatsApp এ অর্ডার পাঠান</button>
-  </form>
-</div>
+            <div class="card-body">
+              <h3>বিফ বার্গার</h3>
+              <p>জুসি প্যাটি, চিজ, ফ্রেশ সবজি।</p>
+              <strong>৳220</strong>
+              <a class="mini-order js-pick-item" href="#contact" data-item="বিফ বার্গার">Order Now</a>
+            </div>
           </article>
 
+          <!-- Cheese Burger -->
           <article class="food-card" data-category="burger" data-search="চিজ বার্গার cheese burger hamburger">
             <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Cheese Burger">
             <div class="card-body">
               <h3>চিজ বার্গার</h3>
               <p>এক্সট্রা চিজ, সফট বান এবং স্পেশাল সস।</p>
               <strong>৳250</strong>
-              <a class="mini-order js-pick-item" href="#contact" data-item="বিফ বার্গার">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="চিজ বার্গার">Order Now</a>
             </div>
           </article>
 
+          <!-- Chicken Pizza -->
           <article class="food-card" data-category="pizza chicken" data-search="চিকেন পিজ্জা chicken pizza cheese">
             <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Chicken Pizza">
             <div class="card-body">
               <h3>চিকেন পিজ্জা</h3>
               <p>চিজি, সফট crust এবং spicy chicken topping।</p>
               <strong>৳350</strong>
-              <a class="mini-order js-pick-item" href="#contact" data-item="চিজ বার্গার">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="চিকেন পিজ্জা">Order Now</a>
             </div>
           </article>
 
+          <!-- Fried Chicken -->
           <article class="food-card" data-category="chicken" data-search="ফ্রাইড চিকেন fried chicken crispy chicken">
             <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=80" alt="Fried Chicken">
             <div class="card-body">
               <h3>ফ্রাইড চিকেন</h3>
               <p>ক্রিসপি coating, ভিতরে juicy chicken।</p>
               <strong>৳250</strong>
-              <a class="mini-order js-pick-item" href="#contact" data-item="চিকেন পিজ্জা">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="ফ্রাইড চিকেন">Order Now</a>
             </div>
           </article>
 
+          <!-- Cold Drinks -->
           <article class="food-card" data-category="drinks" data-search="কোল্ড ড্রিংকস cold drinks soft drinks beverage">
             <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80" alt="Cold Drinks">
             <div class="card-body">
               <h3>কোল্ড ড্রিংকস</h3>
               <p>চিল্ড ড্রিংকস, খাবারের সাথে পারফেক্ট।</p>
               <strong>৳40</strong>
-              <a class="mini-order js-pick-item" href="#contact" data-item="ফ্রাইড চিকেন">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="কোল্ড ড্রিংকস">Order Now</a>
             </div>
           </article>
 
+          <!-- French Fries -->
           <article class="food-card" data-category="snacks" data-search="ফ্রেঞ্চ ফ্রাই french fries snacks potato">
             <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80" alt="French Fries">
             <div class="card-body">
               <h3>ফ্রেঞ্চ ফ্রাই</h3>
               <p>ক্রিসপি, hot এবং spicy dip সহ।</p>
               <strong>৳120</strong>
-              <a class="mini-order js-pick-item" href="#contact" data-item="কোল্ড ড্রিংকস">
-                Order Now
-              </a>
+              <a class="mini-order js-pick-item" href="#contact" data-item="ফ্রেঞ্চ ফ্রাই">Order Now</a>
             </div>
           </article>
 
@@ -312,7 +267,7 @@
         <p class="eyebrow">Special Combo</p>
         <h2>Burger + Fries + Drink</h2>
         <p>মাত্র ৳299</p>
-        <a class="mini-order js-pick-item" href="#contact" data-item="ফ্রেঞ্চ ফ্রাই">
+        <a class="btn js-pick-item" href="#contact" data-item="বিফ বার্গার">
           Order Now
         </a>
       </div>
@@ -322,42 +277,82 @@
     <!-- CONTACT SECTION -->
     <section class="contact-section" id="contact">
       <div class="container contact-box">
-        <div class="container">
-          <div class="contact-map">
-    <!-- এখানে আপনার Google Map iframe বসাবেন -->
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7368.013871630446!2d91.88431969734529!3d22.57884391593553!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1787122025626!5m2!1sen!2sbd"
-    width="100%"
-    height="340"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin">
-  </iframe>
-</div>
-
-  <p class="map-links">
-    <a href="https://maps.google.com/?q=Your+Restaurant+Name" target="_blank" rel="noopener">Google Maps এ দেখুন</a>
-    <span> | </span>
-    <a href="https://g.page/r/REVIEW_LINK" target="_blank" rel="noopener">Review দিন</a>
-  </p>
-</div>
         <div>
           <p class="eyebrow dark">Contact</p>
           <h2>অর্ডার করতে যোগাযোগ করুন</h2>
           <p>ফোন: <a href="tel:+8801700936141">01700936141</a></p>
-          <p>WhatsApp: <a href="https://wa.me/8801700936141" target="_blank">Message করুন</a></p>
+          <p>WhatsApp: <a href="https://wa.me/8801700936141" target="_blank" rel="noopener">Message করুন</a></p>
           <p>ঠিকানা: আপনার দোকানের ঠিকানা</p>
           <p>খোলা থাকে: সকাল ১০টা - রাত ১১টা</p>
         </div>
 
+        <!-- Order form এখানে থাকবে -->
         <div class="order-card">
-          <h3>Quick Order</h3>
-          <p>WhatsApp এ মেসেজ দিলেই order confirm করা হবে।</p>
-          <a class="mini-order js-pick-item" href="#contact" data-item="চিকেন বিরিয়ানি">
-            Order Now
-          </a>
+          <h3>Quick Order (WhatsApp)</h3>
+
+          <form id="waOrderForm" class="wa-form">
+            <label>
+              আপনার নাম
+              <input id="waName" type="text" placeholder="আপনার নাম" required>
+            </label>
+
+            <label>
+              মোবাইল নাম্বার
+              <input id="waPhone" type="tel" placeholder="01XXXXXXXXX" required>
+            </label>
+
+            <label>
+              ঠিকানা
+              <input id="waAddress" type="text" placeholder="আপনার ঠিকানা" required>
+            </label>
+
+            <label>
+              কোন আইটেম
+              <select id="waItem" required>
+                <option value="">Select item</option>
+                <option>চিকেন বিরিয়ানি</option>
+                <option>কাচ্চি বিরিয়ানি</option>
+                <option>বিফ বার্গার</option>
+                <option>চিজ বার্গার</option>
+                <option>চিকেন পিজ্জা</option>
+                <option>ফ্রাইড চিকেন</option>
+                <option>কোল্ড ড্রিংকস</option>
+                <option>ফ্রেঞ্চ ফ্রাই</option>
+              </select>
+            </label>
+
+            <label>
+              কয়টা
+              <input id="waQty" type="number" min="1" value="1" required>
+            </label>
+
+            <label>
+              Note (ঐচ্ছিক)
+              <textarea id="waNote" rows="3" placeholder="ঝাল কম / পেঁয়াজ ছাড়া..."></textarea>
+            </label>
+
+            <button class="btn dark-btn" type="submit">WhatsApp এ অর্ডার পাঠান</button>
+          </form>
         </div>
+      </div>
+
+      <!-- Map নিচে থাকবে -->
+      <div class="container">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7368.013871630446!2d91.88431969734529!3d22.57884391593553!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1787122025626!5m2!1sen!2sbd"
+            width="100%"
+            height="340"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+
+        <p class="map-links">
+          <a href="https://maps.google.com/?q=Ismail+Food+House" target="_blank" rel="noopener">Google Maps এ দেখুন</a>
+        </p>
       </div>
     </section>
 
@@ -367,9 +362,10 @@
     © 2026 Ismail Food House. All Rights Reserved.
   </footer>
 
-  <a class="wa-float" 
-     href="https://wa.me/8801700936141" 
-     target="_blank" 
+  <a class="wa-float"
+     href="https://wa.me/8801700936141"
+     target="_blank"
+     rel="noopener"
      aria-label="WhatsApp Order">
     WhatsApp
   </a>
@@ -378,14 +374,11 @@
     ↑
   </button>
 
-
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
   <!-- Your JavaScript -->
-  <script src="script.js/v-1"></script>
-  
+  <script src="script.js?v=1"></script>
 </body>
 </html>
-
- 
