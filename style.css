@@ -865,4 +865,32 @@ footer {
 .map-links a{
   color: #b57900;
 }
+/* WhatsApp order form */
+.wa-form{
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.wa-form label{
+  display: grid;
+  gap: 6px;
+  font-weight: 800;
+}
+
+.wa-form input,
+.wa-form select,
+.wa-form textarea{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.12);
+  outline: none;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.wa-form textarea{
+  resize: vertical;
+}
 
