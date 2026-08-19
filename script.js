@@ -449,4 +449,8 @@ document.addEventListener("click", function (e) {
   const name = document.getElementById("waName");
   if (name && !name.value) name.focus();
 });
+// Gallery lightbox
+if (window.GLightbox) {
+  GLightbox({ selector: ".glightbox" });
+}
 
