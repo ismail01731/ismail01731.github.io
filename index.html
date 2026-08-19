@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ismail Food House | Parallax Restaurant</title>
+  <meta name="description" content="Ismail Food House - Fresh food, fast delivery and online WhatsApp order.">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -87,140 +88,142 @@
 
 
     <!-- MENU SECTION -->
-<section class="menu-section" id="menu">
-  <div class="container">
-    <p class="eyebrow dark">Popular Menu</p>
-    <h2>আজকের সেরা খাবার</h2>
-    <!-- SEARCH BOX -->
-    <div class="menu-search">
-      <input 
-        type="search" 
-        id="menuSearch" 
-        placeholder="খাবারের নাম লিখুন... যেমন: burger, বিরিয়ানি, pizza" 
-        autocomplete="off"
-      >
-      <button type="button" id="clearSearch">Clear</button>
-    </div>
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <p class="eyebrow dark">Popular Menu</p>
+        <h2>আজকের সেরা খাবার</h2>
 
-    <p class="search-result" id="searchResult"></p>
-
-    <!-- FILTER BUTTONS -->
-    <div class="menu-filters">
-      <button type="button" class="filter-btn active" data-filter="all">সব</button>
-      <button type="button" class="filter-btn" data-filter="biryani">বিরিয়ানি</button>
-      <button type="button" class="filter-btn" data-filter="burger">বার্গার</button>
-      <button type="button" class="filter-btn" data-filter="pizza">পিজ্জা</button>
-      <button type="button" class="filter-btn" data-filter="chicken">চিকেন</button>
-      <button type="button" class="filter-btn" data-filter="drinks">ড্রিংকস</button>
-      <button type="button" class="filter-btn" data-filter="snacks">স্ন্যাকস</button>
-    </div>
-
-    <div class="menu-grid">
-
-      <article class="food-card" data-category="biryani">
-        <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=80" alt="Chicken Biryani">
-        <div class="card-body">
-          <h3>চিকেন বিরিয়ানি</h3>
-          <p>ফ্রেশ চিকেন, সুগন্ধি চাল, স্পেশাল মসলা।</p>
-          <strong>৳180</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Chicken%20Biryani" target="_blank">
-            Order Now
-          </a>
+        <!-- SEARCH BOX -->
+        <div class="menu-search">
+          <input 
+            type="search" 
+            id="menuSearch" 
+            placeholder="খাবারের নাম লিখুন... যেমন: burger, বিরিয়ানি, pizza" 
+            autocomplete="off"
+          >
+          <button type="button" id="clearSearch">Clear</button>
         </div>
-      </article>
 
-      <article class="food-card" data-category="biryani" data-search="চিকেন বিরিয়ানি chicken biryani biriyani rice">
-        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=80" alt="Kacchi Biryani">
-        <div class="card-body">
-          <h3>কাচ্চি বিরিয়ানি</h3>
-          <p>স্পেশাল মসলা, নরম মাংস এবং প্রিমিয়াম চাল।</p>
-          <strong>৳280</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Kacchi%20Biryani" target="_blank">
-            Order Now
-          </a>
+        <p class="search-result" id="searchResult"></p>
+
+        <!-- FILTER BUTTONS -->
+        <div class="menu-filters">
+          <button type="button" class="filter-btn active" data-filter="all">সব</button>
+          <button type="button" class="filter-btn" data-filter="biryani">বিরিয়ানি</button>
+          <button type="button" class="filter-btn" data-filter="burger">বার্গার</button>
+          <button type="button" class="filter-btn" data-filter="pizza">পিজ্জা</button>
+          <button type="button" class="filter-btn" data-filter="chicken">চিকেন</button>
+          <button type="button" class="filter-btn" data-filter="drinks">ড্রিংকস</button>
+          <button type="button" class="filter-btn" data-filter="snacks">স্ন্যাকস</button>
         </div>
-      </article>
 
-      <article class="food-card" data-category="burger" data-search="বিফ বার্গার beef burger hamburger">
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Beef Burger">
-        <div class="card-body">
-          <h3>বিফ বার্গার</h3>
-          <p>জুসি প্যাটি, চিজ, ফ্রেশ সবজি।</p>
-          <strong>৳220</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Beef%20Burger" target="_blank">
-            Order Now
-          </a>
+        <div class="menu-grid">
+
+          <article class="food-card" data-category="biryani" data-search="চিকেন বিরিয়ানি chicken biryani biriyani rice">
+            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=80" alt="Chicken Biryani">
+            <div class="card-body">
+              <h3>চিকেন বিরিয়ানি</h3>
+              <p>ফ্রেশ চিকেন, সুগন্ধি চাল, স্পেশাল মসলা।</p>
+              <strong>৳180</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Chicken%20Biryani" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="biryani" data-search="কাচ্চি বিরিয়ানি kacchi biryani biriyani rice mutton">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=80" alt="Kacchi Biryani">
+            <div class="card-body">
+              <h3>কাচ্চি বিরিয়ানি</h3>
+              <p>স্পেশাল মসলা, নরম মাংস এবং প্রিমিয়াম চাল।</p>
+              <strong>৳280</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Kacchi%20Biryani" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="burger" data-search="বিফ বার্গার beef burger hamburger">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Beef Burger">
+            <div class="card-body">
+              <h3>বিফ বার্গার</h3>
+              <p>জুসি প্যাটি, চিজ, ফ্রেশ সবজি।</p>
+              <strong>৳220</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Beef%20Burger" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="burger" data-search="চিজ বার্গার cheese burger hamburger">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Cheese Burger">
+            <div class="card-body">
+              <h3>চিজ বার্গার</h3>
+              <p>এক্সট্রা চিজ, সফট বান এবং স্পেশাল সস।</p>
+              <strong>৳250</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Cheese%20Burger" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="pizza chicken" data-search="চিকেন পিজ্জা chicken pizza cheese">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Chicken Pizza">
+            <div class="card-body">
+              <h3>চিকেন পিজ্জা</h3>
+              <p>চিজি, সফট crust এবং spicy chicken topping।</p>
+              <strong>৳350</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Chicken%20Pizza" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="chicken" data-search="ফ্রাইড চিকেন fried chicken crispy chicken">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=80" alt="Fried Chicken">
+            <div class="card-body">
+              <h3>ফ্রাইড চিকেন</h3>
+              <p>ক্রিসপি coating, ভিতরে juicy chicken।</p>
+              <strong>৳250</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Fried%20Chicken" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="drinks" data-search="কোল্ড ড্রিংকস cold drinks soft drinks beverage">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80" alt="Cold Drinks">
+            <div class="card-body">
+              <h3>কোল্ড ড্রিংকস</h3>
+              <p>চিল্ড ড্রিংকস, খাবারের সাথে পারফেক্ট।</p>
+              <strong>৳40</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Cold%20Drinks" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="snacks" data-search="ফ্রেঞ্চ ফ্রাই french fries snacks potato">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80" alt="French Fries">
+            <div class="card-body">
+              <h3>ফ্রেঞ্চ ফ্রাই</h3>
+              <p>ক্রিসপি, hot এবং spicy dip সহ।</p>
+              <strong>৳120</strong>
+              <a class="mini-order" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20French%20Fries" target="_blank">
+                Order Now
+              </a>
+            </div>
+          </article>
+
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="food-card" data-category="burger">
-        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Cheese Burger">
-        <div class="card-body">
-          <h3>চিজ বার্গার</h3>
-          <p>এক্সট্রা চিজ, সফট বান এবং স্পেশাল সস।</p>
-          <strong>৳250</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Cheese%20Burger" target="_blank">
-            Order Now
-          </a>
-        </div>
-      </article>
-
-      <article class="food-card" data-category="pizza chicken" data-search="চিকেন পিজ্জা chicken pizza cheese">
-        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Chicken Pizza">
-        <div class="card-body">
-          <h3>চিকেন পিজ্জা</h3>
-          <p>চিজি, সফট crust এবং spicy chicken topping।</p>
-          <strong>৳350</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Chicken%20Pizza" target="_blank">
-            Order Now
-          </a>
-        </div>
-      </article>
-
-      <article class="food-card" data-category="chicken">
-        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=80" alt="Fried Chicken">
-        <div class="card-body">
-          <h3>ফ্রাইড চিকেন</h3>
-          <p>ক্রিসপি coating, ভিতরে juicy chicken।</p>
-          <strong>৳250</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Fried%20Chicken" target="_blank">
-            Order Now
-          </a>
-        </div>
-      </article>
-
-      <article class="food-card" data-category="drinks" data-search="কোল্ড ড্রিংকস cold drinks soft drinks beverage">
-        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80" alt="Cold Drinks">
-        <div class="card-body">
-          <h3>কোল্ড ড্রিংকস</h3>
-          <p>চিল্ড ড্রিংকস, খাবারের সাথে পারফেক্ট।</p>
-          <strong>৳40</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20Cold%20Drinks" target="_blank">
-            Order Now
-          </a>
-        </div>
-      </article>
-
-      <article class="food-card" data-category="snacks">
-        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80" alt="French Fries">
-        <div class="card-body">
-          <h3>ফ্রেঞ্চ ফ্রাই</h3>
-          <p>ক্রিসপি, hot এবং spicy dip সহ।</p>
-          <strong>৳120</strong>
-          <a class="mini-order" href="https://wa.me/8801795443139?text=I%20want%20to%20order%20French%20Fries" target="_blank">
-            Order Now
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
 
     <!-- ACTUAL VIDEO SCROLL SECTION -->
     <section class="video-scroll" id="videoStory">
-      <video class="scroll-video" muted playsinline preload="auto">
-        <source src="assets/food2.mp4" type="video/mp4">
+      <video class="scroll-video" muted playsinline webkit-playsinline preload="auto">
+        <source src="assets/food2.mp4?v=2" type="video/mp4">
       </video>
 
       <div class="video-overlay"></div>
@@ -254,7 +257,7 @@
         <p class="eyebrow">Special Combo</p>
         <h2>Burger + Fries + Drink</h2>
         <p>মাত্র ৳299</p>
-        <a class="btn" href="https://wa.me/8801700936141" target="_blank">
+        <a class="btn" href="https://wa.me/8801700936141?text=I%20want%20to%20order%20Special%20Combo" target="_blank">
           Order Combo
         </a>
       </div>
@@ -288,446 +291,25 @@
   <footer>
     © 2026 Ismail Food House. All Rights Reserved.
   </footer>
-  <a class="wa-float" 
-  href="https://wa.me/8801700936141" target="_blank" 
-  aria-label="WhatsApp Order">
-    WhatsApp
-</a>
 
-<button class="back-top" id="backTop" aria-
-label="Back to top">
-  ↑
-</button>
+  <a class="wa-float" 
+     href="https://wa.me/8801700936141" 
+     target="_blank" 
+     aria-label="WhatsApp Order">
+    WhatsApp
+  </a>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    ↑
+  </button>
 
 
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <!-- ALL ANIMATION JS -->
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Hero video-like parallax
-    gsap.to(".hero-bg", {
-      scale: 1.18,
-      y: 80,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".hero-scene",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-
-    gsap.to(".hero-content", {
-      y: -120,
-      opacity: 0,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".hero-scene",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-
-    gsap.to(".food-1", {
-      y: 220,
-      x: -70,
-      rotate: 25,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".hero-scene",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-
-    gsap.to(".food-2", {
-      y: -160,
-      x: 70,
-      rotate: -20,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".hero-scene",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-
-    gsap.to(".food-3", {
-      y: 160,
-      x: 80,
-      rotate: 18,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".hero-scene",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-
-
-    // Storytelling pinned section
-    gsap.set(".story-step", { autoAlpha: 0, y: 40 });
-    gsap.set(".step-1", { autoAlpha: 1, y: 0 });
-
-    const story = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".story-wrap",
-        start: "top top",
-        end: "+=2400",
-        scrub: true,
-        pin: ".story-pin",
-        anticipatePin: 1
-      }
-    });
-
-    story
-      .fromTo(".plate",
-        { scale: 0.75, y: 80, rotate: -8, autoAlpha: 0 },
-        { scale: 1, y: 0, rotate: 0, autoAlpha: 1, duration: 0.8 }
-      )
-      .to(".story-bg", { scale: 1.15, duration: 2.6 }, 0)
-
-      .to(".step-1", { autoAlpha: 0, y: -50, duration: 0.5 }, 0.9)
-      .fromTo(".step-2",
-        { autoAlpha: 0, y: 50 },
-        { autoAlpha: 1, y: 0, duration: 0.5 },
-        1.0
-      )
-      .to(".plate", { x: 120, rotate: 8, scale: 1.06, duration: 1 }, 1.0)
-
-      .to(".step-2", { autoAlpha: 0, y: -50, duration: 0.5 }, 1.9)
-      .fromTo(".step-3",
-        { autoAlpha: 0, y: 50 },
-        { autoAlpha: 1, y: 0, duration: 0.5 },
-        2.0
-      )
-      .to(".plate", { x: -80, y: -20, rotate: -7, scale: 0.95, duration: 1 }, 2.0);
-
-
-    // Menu cards animation
-    
-    gsap.from(".food-card", {
-      y: 90,
-      opacity: 0,
-      rotateX: 15,
-      stagger: 0.15,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".menu-grid",
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-      }
-    });
-// Menu filter + search system
-const filterButtons = document.querySelectorAll(".filter-btn");
-const allMenuCards = document.querySelectorAll(".menu-grid .food-card");
-const menuSearch = document.getElementById("menuSearch");
-const clearSearch = document.getElementById("clearSearch");
-const searchResult = document.getElementById("searchResult");
-
-const activeButton = document.querySelector(".filter-btn.active");
-let activeFilter = activeButton ? activeButton.getAttribute("data-filter") : "all";
-
-function getCardSearchText(card) {
-  const img = card.querySelector("img");
-  const imgAlt = img ? img.getAttribute("alt") : "";
-
-  return (
-    (card.getAttribute("data-search") || "") +
-    " " +
-    card.innerText +
-    " " +
-    imgAlt
-  ).toLowerCase();
-}
-
-function updateMenuList() {
-  const keyword = menuSearch ? menuSearch.value.trim().toLowerCase() : "";
-  const visibleCards = [];
-
-  allMenuCards.forEach(function (card) {
-    const categories = (card.getAttribute("data-category") || "")
-      .toLowerCase()
-      .split(/\s+/);
-
-    const cardText = getCardSearchText(card);
-
-    const matchCategory =
-      activeFilter === "all" || categories.includes(activeFilter);
-
-    const matchSearch =
-      keyword === "" || cardText.includes(keyword);
-
-    if (matchCategory && matchSearch) {
-      card.classList.remove("is-hidden");
-      visibleCards.push(card);
-    } else {
-      card.classList.add("is-hidden");
-    }
-  });
-
-  if (searchResult) {
-    if (keyword !== "" || activeFilter !== "all") {
-      if (visibleCards.length > 0) {
-        searchResult.textContent = visibleCards.length + "টি খাবার পাওয়া গেছে";
-      } else {
-        searchResult.textContent = "কোন খাবার পাওয়া যায়নি";
-      }
-    } else {
-      searchResult.textContent = "";
-    }
-  }
-
-  // smooth animation after search/filter
-  if (window.gsap && visibleCards.length > 0) {
-    gsap.killTweensOf(visibleCards);
-
-    gsap.fromTo(
-      visibleCards,
-      {
-        opacity: 0,
-        y: 30,
-        scale: 0.96
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 0.4,
-        stagger: 0.06,
-        ease: "power2.out",
-        clearProps: "transform"
-      }
-    );
-  }
-
-  if (window.ScrollTrigger) {
-    ScrollTrigger.refresh();
-  }
-}
-
-filterButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    activeFilter = button.getAttribute("data-filter") || "all";
-
-    filterButtons.forEach(function (btn) {
-      btn.classList.remove("active");
-    });
-
-    button.classList.add("active");
-
-    updateMenuList();
-  });
-});
-
-if (menuSearch) {
-  menuSearch.addEventListener("input", updateMenuList);
-
-  menuSearch.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      menuSearch.value = "";
-      updateMenuList();
-    }
-  });
-}
-
-if (clearSearch) {
-  clearSearch.addEventListener("click", function () {
-    if (menuSearch) {
-      menuSearch.value = "";
-      menuSearch.focus();
-    }
-
-    updateMenuList();
-  });
-}
-
-    // active button change
-    filterButtons.forEach(function (btn) {
-      btn.classList.remove("active");
-    });
-    button.classList.add("active");
-
-    const visibleCards = [];
-
-    allMenuCards.forEach(function (card) {
-      const categories = (card.getAttribute("data-category") || "").split(" ");
-
-      if (filterValue === "all" || categories.includes(filterValue)) {
-        card.classList.remove("is-hidden");
-        visibleCards.push(card);
-      } else {
-        card.classList.add("is-hidden");
-      }
-    });
-
-    // smooth animation after filter
-    if (window.gsap && visibleCards.length > 0) {
-      gsap.killTweensOf(visibleCards);
-
-      gsap.fromTo(
-        visibleCards,
-        {
-          opacity: 0,
-          y: 35,
-          scale: 0.96
-        },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 0.45,
-          stagger: 0.08,
-          ease: "power2.out",
-          clearProps: "transform"
-        }
-      );
-    }
-
-    if (window.ScrollTrigger) {
-      ScrollTrigger.refresh();
-    }
-  });
-});
-
-
-    // Actual video scroll effect
-    const scrollVideo = document.querySelector(".scroll-video");
-
-    function initVideoScroll() {
-      if (!scrollVideo || scrollVideo.dataset.gsapInit === "true") return;
-
-      scrollVideo.dataset.gsapInit = "true";
-
-      gsap.set(".v-step", { autoAlpha: 0, y: 50 });
-
-      const videoTimeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".video-scroll",
-          start: "top top",
-          end: "+=3000",
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-          invalidateOnRefresh: true
-        }
-      });
-
-      videoTimeline.to(scrollVideo, {
-        currentTime: scrollVideo.duration,
-        ease: "none",
-        duration: 1
-      }, 0);
-
-      videoTimeline
-        .fromTo(".v-step-1",
-          { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, duration: 0.2 },
-          0.05
-        )
-        .to(".v-step-1",
-          { autoAlpha: 0, y: -50, duration: 0.2 },
-          0.30
-        )
-
-        .fromTo(".v-step-2",
-          { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, duration: 0.2 },
-          0.40
-        )
-        .to(".v-step-2",
-          { autoAlpha: 0, y: -50, duration: 0.2 },
-          0.62
-        )
-
-        .fromTo(".v-step-3",
-          { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, duration: 0.25 },
-          0.72
-        );
-
-      ScrollTrigger.refresh();
-    }
-
-    if (scrollVideo) {
-      scrollVideo.addEventListener("loadedmetadata", initVideoScroll, { once: true });
-      scrollVideo.load();
-
-      if (scrollVideo.readyState >= 1) {
-        initVideoScroll();
-      }
-    }
-
-
-    // Offer section parallax
-    gsap.to(".offer-bg", {
-      scale: 1.18,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".offer-section",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-
-    gsap.from(".offer-content", {
-      y: 70,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".offer-section",
-        start: "top 70%"
-      }
-    });
-    // Scroll progress bar
-const progressBar = document.querySelector(".progress-bar");
-
-window.addEventListener("scroll", function () {
-  const scrollTop = document.documentElement.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const progress = (scrollTop / scrollHeight) * 100;
-
-  if (progressBar) {
-    progressBar.style.width = progress + "%";
-  }
-});
-
-// Back to top button
-const backTop = document.getElementById("backTop");
-
-window.addEventListener("scroll", function () {
-  if (!backTop) return;
-
-  if (window.scrollY > 700) {
-    backTop.classList.add("show");
-  } else {
-    backTop.classList.remove("show");
-  }
-});
-
-if (backTop) {
-  backTop.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-}
-
-    window.addEventListener("load", function () {
-      ScrollTrigger.refresh();
-    });
-  </script>
+  <!-- Your JavaScript -->
+  <script src="script.js?v=1"></script>
 
 </body>
 </html>
