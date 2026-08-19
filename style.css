@@ -705,4 +705,83 @@ footer {
     height: 42px;
   }
 }
+/* MENU FILTER SYSTEM */
+.menu-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 34px;
+}
+
+.filter-btn {
+  border: 1px solid rgba(33, 23, 13, 0.18);
+  background: #fff;
+  color: #21170d;
+  padding: 11px 18px;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+/* Hidden item after filter */
+.food-card.is-hidden {
+  display: none !important;
+}
+
+/* Small order button inside menu card */
+.mini-order {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.mini-order:hover {
+  background: #ffcc33;
+  color: #111 !important;
+  transform: translateY(-2px);
+}
+
+/* Better card hover */
+.food-card {
+  transition: 0.35s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(80, 45, 0, 0.22);
+}
+
+.food-card img {
+  transition: 0.45s ease;
+}
+
+.food-card:hover img {
+  transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+  .menu-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+}
 
