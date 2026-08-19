@@ -950,4 +950,8 @@ footer {
   padding-top: 140px;   /* আগে কম থাকলে বাড়বে */
   margin-top: 40px;     /* hero থেকে একটু নিচে নামবে */
 }
+/* Search bar নিচে নামানো */
+.menu-search{
+  margin-top: 22px;
+}
 
