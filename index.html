@@ -14,6 +14,7 @@
     <nav>
       <a href="#story">Story</a>
       <a href="#menu">Menu</a>
+      <a href="#videoStory">Video</a>
       <a href="#contact">Order</a>
     </nav>
   </header>
@@ -127,37 +128,40 @@
               <strong>৳250</strong>
             </div>
           </article>
+
         </div>
       </div>
     </section>
+
+
+    <!-- ACTUAL VIDEO SCROLL SECTION -->
     <section class="video-scroll" id="videoStory">
-  <video class="scroll-video" muted playsinline preload="auto">
-    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-  </video>
+      <video class="scroll-video" muted playsinline preload="auto">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
 
-  <div class="video-overlay"></div>
+      <div class="video-overlay"></div>
 
-  <div class="video-text">
-    <div class="v-step v-step-1">
-      <span>01</span>
-      <h2>Fresh Food Story</h2>
-      <p>Scroll করলে video ধীরে ধীরে সামনে যাবে।</p>
-    </div>
+      <div class="video-text">
+        <div class="v-step v-step-1">
+          <span>01</span>
+          <h2>Fresh Food Story</h2>
+          <p>Scroll করলে video ধীরে ধীরে সামনে যাবে।</p>
+        </div>
 
-    <div class="v-step v-step-2">
-      <span>02</span>
-      <h2>Cooking Process</h2>
-      <p>এখানে আপনি রান্না/food preparation story দেখাতে পারবেন।</p>
-    </div>
+        <div class="v-step v-step-2">
+          <span>02</span>
+          <h2>Cooking Process</h2>
+          <p>এখানে আপনি রান্না বা food preparation story দেখাতে পারবেন।</p>
+        </div>
 
-    <div class="v-step v-step-3">
-      <span>03</span>
-      <h2>Ready To Serve</h2>
-      <p>শেষে order button বা special offer দেখাতে পারবেন।</p>
-    </div>
-  </div>
-</section>
-    
+        <div class="v-step v-step-3">
+          <span>03</span>
+          <h2>Ready To Serve</h2>
+          <p>শেষে order button বা special offer দেখাতে পারবেন।</p>
+        </div>
+      </div>
+    </section>
 
 
     <!-- OFFER PARALLAX SECTION -->
@@ -207,62 +211,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
+  <!-- ALL ANIMATION JS -->
   <script>
     gsap.registerPlugin(ScrollTrigger);
-    <script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  const scrollVideo = document.querySelector(".scroll-video");
-
-  if (scrollVideo) {
-    scrollVideo.addEventListener("loadedmetadata", function () {
-      const videoTimeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".video-scroll",
-          start: "top top",
-          end: "+=3000",
-          scrub: true,
-          pin: true,
-          anticipatePin: 1
-        }
-      });
-
-      videoTimeline.to(scrollVideo, {
-        currentTime: scrollVideo.duration,
-        ease: "none"
-      }, 0);
-
-      videoTimeline
-        .fromTo(".v-step-1",
-          { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, duration: 0.4 },
-          0.05
-        )
-        .to(".v-step-1",
-          { autoAlpha: 0, y: -50, duration: 0.4 },
-          0.30
-        )
-
-        .fromTo(".v-step-2",
-          { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, duration: 0.4 },
-          0.38
-        )
-        .to(".v-step-2",
-          { autoAlpha: 0, y: -50, duration: 0.4 },
-          0.65
-        )
-
-        .fromTo(".v-step-3",
-          { autoAlpha: 0, y: 50 },
-          { autoAlpha: 1, y: 0, duration: 0.4 },
-          0.72
-        );
-    });
-
-    scrollVideo.load();
-  }
-</script>
 
     // Hero video-like parallax
     gsap.to(".hero-bg", {
@@ -382,6 +333,74 @@
         toggleActions: "play none none reverse"
       }
     });
+
+
+    // Actual video scroll effect
+    const scrollVideo = document.querySelector(".scroll-video");
+
+    function initVideoScroll() {
+      if (!scrollVideo || scrollVideo.dataset.gsapInit === "true") return;
+
+      scrollVideo.dataset.gsapInit = "true";
+
+      gsap.set(".v-step", { autoAlpha: 0, y: 50 });
+
+      const videoTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".video-scroll",
+          start: "top top",
+          end: "+=3000",
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true
+        }
+      });
+
+      videoTimeline.to(scrollVideo, {
+        currentTime: scrollVideo.duration,
+        ease: "none",
+        duration: 1
+      }, 0);
+
+      videoTimeline
+        .fromTo(".v-step-1",
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, duration: 0.2 },
+          0.05
+        )
+        .to(".v-step-1",
+          { autoAlpha: 0, y: -50, duration: 0.2 },
+          0.30
+        )
+
+        .fromTo(".v-step-2",
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, duration: 0.2 },
+          0.40
+        )
+        .to(".v-step-2",
+          { autoAlpha: 0, y: -50, duration: 0.2 },
+          0.62
+        )
+
+        .fromTo(".v-step-3",
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, duration: 0.25 },
+          0.72
+        );
+
+      ScrollTrigger.refresh();
+    }
+
+    if (scrollVideo) {
+      scrollVideo.addEventListener("loadedmetadata", initVideoScroll, { once: true });
+      scrollVideo.load();
+
+      if (scrollVideo.readyState >= 1) {
+        initVideoScroll();
+      }
+    }
 
 
     // Offer section parallax
