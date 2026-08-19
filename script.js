@@ -120,7 +120,7 @@ gsap.from(".food-card", {
 });
 
 
-// Menu filter + search system
+// clearSearch
 const filterButtons = document.querySelectorAll(".filter-btn");
 const allMenuCards = document.querySelectorAll(".menu-grid .food-card");
 const menuSearch = document.getElementById("menuSearch");
@@ -242,6 +242,8 @@ if (clearSearch) {
     updateMenuList();
   });
 }
+// প্রথম লোডেই all items show করার জন্য
+updateMenuList();
 
 
 // Actual video scroll effect
