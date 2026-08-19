@@ -784,4 +784,68 @@ footer {
     font-size: 13px;
   }
 }
+/* MENU SEARCH BOX */
+.menu-search {
+  display: flex;
+  gap: 12px;
+  max-width: 680px;
+  margin: 0 0 14px;
+}
+
+.menu-search input {
+  flex: 1;
+  width: 100%;
+  border: 1px solid rgba(33, 23, 13, 0.18);
+  outline: none;
+  background: #fff;
+  color: #21170d;
+  padding: 15px 18px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 12px 35px rgba(80, 45, 0, 0.08);
+}
+
+.menu-search input:focus {
+  border-color: #ffcc33;
+  box-shadow: 0 0 0 4px rgba(255, 204, 51, 0.22);
+}
+
+.menu-search button {
+  border: 0;
+  background: #111;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.menu-search button:hover {
+  background: #ffcc33;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.search-result {
+  margin: 0 0 20px;
+  color: #6b5a44;
+  font-weight: 800;
+}
+
+/* Filter hide system */
+.food-card.is-hidden {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .menu-search {
+    flex-direction: column;
+  }
+
+  .menu-search button {
+    padding: 13px 18px;
+  }
+}
 
