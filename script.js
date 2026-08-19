@@ -411,3 +411,42 @@ if (waOrderForm) {
     window.open(url, "_blank");
   });
 }
+// Menu card -> Order form auto select
+document.addEventListener("click", function (e) {
+  const btn = e.target.closest(".js-pick-item");
+  if (!btn) return;
+
+  e.preventDefault();
+
+  const itemName = (btn.dataset.item || "").trim();
+  const itemSelect = document.getElementById("waItem");
+  if (!itemSelect || !itemName) return;
+
+  // select-এর option match করে value set
+  const options = Array.from(itemSelect.options);
+  const matched = options.find(o => o.text.trim() === itemName);
+
+  if (matched) {
+    itemSelect.value = matched.value || matched.text;
+  } else {
+    // option না থাকলে add করে দেবে
+    const opt = document.createElement("option");
+    opt.value = itemName;
+    opt.text = itemName;
+    itemSelect.add(opt);
+    itemSelect.value = itemName;
+  }
+
+  // qty default 1
+  const qty = document.getElementById("waQty");
+  if (qty) qty.value = 1;
+
+  // smooth scroll to contact/order form
+  const contact = document.getElementById("contact");
+  if (contact) contact.scrollIntoView({ behavior: "smooth" });
+
+  // focus
+  const name = document.getElementById("waName");
+  if (name && !name.value) name.focus();
+});
+
