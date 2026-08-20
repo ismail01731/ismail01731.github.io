@@ -1059,4 +1059,16 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.review-slider{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding-bottom: 6px;
+}
+
+.review-card{
+  min-width: 300px;
+  scroll-snap-align: start;
+}
 
