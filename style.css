@@ -1079,4 +1079,47 @@ footer {
 .review-cta p{
   font-weight:800;
 }
+/* MOBILE MENU */
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: #ffcc33;
+  font-size: 34px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+/* মোবাইলে default nav hide */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 12px 18px;
+    flex-wrap: wrap;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .topbar nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+  }
+
+  .topbar nav a {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+
+  /* menu open হলে show হবে */
+  .topbar nav.active {
+    display: flex;
+  }
+}
 
