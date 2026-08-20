@@ -1161,4 +1161,26 @@ footer {
 footer p{
   margin: 4px 0;
 }
+/* Footer polish */
+footer{
+  background: #0d0c0a;
+  padding: 30px 16px;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 15px;
+}
+
+/* WhatsApp button green */
+.wa-float{
+  background: #25d366;
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Back to top */
+.back-top{
+  background: #ffcc33;
+  color: #111;
+  font-weight: 900;
+}
 
