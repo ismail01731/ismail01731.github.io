@@ -1071,4 +1071,12 @@ footer {
   min-width: 300px;
   scroll-snap-align: start;
 }
+.review-cta{
+  text-align:center;
+  margin-top:28px;
+}
+
+.review-cta p{
+  font-weight:800;
+}
 
