@@ -455,21 +455,6 @@ document.addEventListener("click", function (e) {
 if (window.GLightbox) {
   GLightbox({ selector: ".glightbox" });
 }
-// Mobile menu toggle
-const menuBtn = document.getElementById("menuBtn");
-const mainNav = document.getElementById("mainNav");
 
-if (menuBtn && mainNav) {
-  menuBtn.addEventListener("click", function () {
-    mainNav.classList.toggle("active");
-  });
-
-  // nav link এ click করলে menu close হবে
-  mainNav.addEventListener("click", function (e) {
-    if (e.target.tagName === "A") {
-      mainNav.classList.remove("active");
-    }
-  });
-}
 
 
