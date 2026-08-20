@@ -1183,4 +1183,116 @@ footer{
   color: #111;
   font-weight: 900;
 }
+/* Smooth everything */
+img, a, button{
+  transition: 0.25s ease;
+}
+
+/* text selection look premium */
+::selection{
+  background: #ffcc33;
+  color: #111;
+}
+/* Food card polish */
+.food-card{
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 24px;
+}
+
+.food-card:hover{
+  box-shadow: 0 24px 60px rgba(0,0,0,0.2);
+}
+/* Button icon feel */
+.btn{
+  letter-spacing: 0.5px;
+}
+
+.btn:active{
+  transform: translateY(4px);
+}
+/* Section spacing polish */
+.section,
+.menu-section,
+.reviews-section,
+.contact-section{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 600px){
+  .food-card{
+    margin-bottom: 8px;
+  }
+
+  .btn{
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Search bar polish */
+.menu-search{
+  margin-top: 22px;
+  margin-bottom: 26px;
+}
+
+.menu-search input{
+  background: #fff;
+  font-size: 15px;
+}
+
+.menu-search button{
+  background: #111;
+  color: #fff;
+  padding: 0 22px;
+  font-weight: 800;
+}
+/* Navbar hover */
+.topbar nav a{
+  position: relative;
+}
+
+.topbar nav a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ffcc33;
+  transition: 0.25s ease;
+}
+
+.topbar nav a:hover::after{
+  width: 100%;
+}
+footer p{
+  font-size: 14px;
+  margin: 6px 0;
+}
+.hero-content p{
+  font-size: 18px;
+}
+
+.hero-content h1{
+  font-size: clamp(50px, 8vw, 88px);
+}
+.back-top{
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.filter-btn{
+  border-radius: 30px;
+  background: #fff;
+  color: #111;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+  background: #ffcc33;
+  color: #111;
+  border-color: #ffcc33;
+}
+.wa-float{
+  background: #25d366;
+  color: #fff;
+  padding: 14px 22px;
+}
 
